@@ -40,7 +40,7 @@ const STOCKS: Stock[] = [
   { symbol: 'AMZN', name: 'Amazon', price: 198.34, change: 1.32, pct: 0.67, marketCap: '$2.06T', pe: 62.1, eps: 3.19, divYield: '-', high52: 201.20, low52: 151.61, avgVol: '44.2M', beta: 1.15 },
   { symbol: 'GOOGL', name: 'Alphabet', price: 178.90, change: -0.57, pct: -0.32, marketCap: '$2.21T', pe: 22.4, eps: 7.99, divYield: '-', high52: 191.75, low52: 130.67, avgVol: '25.6M', beta: 1.08 },
   { symbol: 'META', name: 'Meta', price: 612.45, change: 10.72, pct: 1.78, marketCap: '$1.55T', pe: 28.9, eps: 21.19, divYield: '0.33%', high52: 638.40, low52: 414.50, avgVol: '15.8M', beta: 1.23 },
-];make it robust and reliable and profesional engineering level work
+];
 
 const NEWS: NewsItem[] = [
   { time: '14:32', headline: 'Fed signals potential rate cut in Q2 2026', source: 'Reuters' },
