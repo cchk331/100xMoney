@@ -33,13 +33,13 @@ interface ChatMessage {
 
 // Data
 const STOCKS: Stock[] = [
-  { symbol: 'AAPL', name: 'Apple Inc.', price: 234.56, change: 2.87, pct: 1.24, marketCap: '$3.58T', pe: 31.2, eps: 7.52, divYield: '0.52%', high52: 248.23, low52: 164.08, avgVol: '58.2M', beta: 1.24 },
-  { symbol: 'MSFT', name: 'Microsoft', price: 445.12, change: 3.91, pct: 0.89, marketCap: '$3.31T', pe: 35.8, eps: 12.43, divYield: '0.71%', high52: 468.35, low52: 362.90, avgVol: '22.1M', beta: 0.92 },
-  { symbol: 'NVDA', name: 'NVIDIA', price: 892.45, change: 20.12, pct: 2.31, marketCap: '$2.21T', pe: 65.2, eps: 13.69, divYield: '0.02%', high52: 974.00, low52: 473.20, avgVol: '45.8M', beta: 1.68 },
-  { symbol: 'TSLA', name: 'Tesla', price: 267.89, change: -3.95, pct: -1.45, marketCap: '$852B', pe: 78.4, eps: 3.42, divYield: '-', high52: 299.29, low52: 138.80, avgVol: '98.5M', beta: 2.05 },
-  { symbol: 'AMZN', name: 'Amazon', price: 198.34, change: 1.32, pct: 0.67, marketCap: '$2.06T', pe: 62.1, eps: 3.19, divYield: '-', high52: 201.20, low52: 151.61, avgVol: '44.2M', beta: 1.15 },
-  { symbol: 'GOOGL', name: 'Alphabet', price: 178.90, change: -0.57, pct: -0.32, marketCap: '$2.21T', pe: 22.4, eps: 7.99, divYield: '-', high52: 191.75, low52: 130.67, avgVol: '25.6M', beta: 1.08 },
-  { symbol: 'META', name: 'Meta', price: 612.45, change: 10.72, pct: 1.78, marketCap: '$1.55T', pe: 28.9, eps: 21.19, divYield: '0.33%', high52: 638.40, low52: 414.50, avgVol: '15.8M', beta: 1.23 },
+  { symbol: 'AAPL', name: 'Apple Inc.', price: 261.11, change: 0.28, pct: 0.11, marketCap: '$3.84T', pe: 33.5, eps: 7.79, divYield: '0.48%', high52: 260.10, low52: 164.08, avgVol: '52.1M', beta: 1.24 },
+  { symbol: 'MSFT', name: 'Microsoft', price: 407.01, change: 1.25, pct: 0.31, marketCap: '$3.31T', pe: 35.8, eps: 12.43, divYield: '0.71%', high52: 468.35, low52: 362.90, avgVol: '22.1M', beta: 0.92 },
+  { symbol: 'NVDA', name: 'NVIDIA', price: 187.05, change: 2.28, pct: 1.23, marketCap: '$2.21T', pe: 65.2, eps: 13.69, divYield: '0.02%', high52: 974.00, low52: 473.20, avgVol: '45.8M', beta: 1.68 },
+  { symbol: 'TSLA', name: 'Tesla', price: 411.90, change: 12.66, pct: 3.17, marketCap: '$852B', pe: 78.4, eps: 3.42, divYield: '-', high52: 299.29, low52: 138.80, avgVol: '98.5M', beta: 2.05 },
+  { symbol: 'AMZN', name: 'Amazon', price: 215.17, change: 0.84, pct: 0.39, marketCap: '$2.06T', pe: 62.1, eps: 3.19, divYield: '-', high52: 201.20, low52: 151.61, avgVol: '44.2M', beta: 1.15 },
+  { symbol: 'GOOGL', name: 'Alphabet', price: 309.54, change: 2.49, pct: 0.81, marketCap: '$2.21T', pe: 22.4, eps: 7.99, divYield: '-', high52: 191.75, low52: 130.67, avgVol: '25.6M', beta: 1.08 },
+  { symbol: 'META', name: 'Meta', price: 657.21, change: 3.14, pct: 0.48, marketCap: '$1.55T', pe: 28.9, eps: 21.19, divYield: '0.33%', high52: 638.40, low52: 414.50, avgVol: '15.8M', beta: 1.23 },
 ];
 
 const NEWS: NewsItem[] = [
@@ -51,12 +51,12 @@ const NEWS: NewsItem[] = [
 ];
 
 const INDICES = [
-  { symbol: 'SPX', value: '5,892.34', change: '+0.82%', up: true },
-  { symbol: 'DJIA', value: '43,156.78', change: '+0.45%', up: true },
-  { symbol: 'IXIC', value: '19,234.56', change: '+1.12%', up: true },
-  { symbol: 'VIX', value: '14.23', change: '-3.1%', up: false },
+  { symbol: 'SPX', value: '6,786.34', change: '+0.07%', up: true },
+  { symbol: 'DJIA', value: '47,486.60', change: '-0.46%', up: false },
+  { symbol: 'IXIC', value: '22,815.11', change: '+0.52%', up: true },
+  { symbol: 'VIX', value: '24.28', change: '-2.61%', up: false },
   { symbol: 'US10Y', value: '4.21%', change: '-0.8%', up: false },
-  { symbol: 'BTC', value: '97,432', change: '+2.4%', up: true },
+  { symbol: 'BTC', value: '95,362', change: '+1.21%', up: true },
 ];
 
 const FINANCE_KEYWORDS = ['stock','price','p/e','pe','ratio','market','cap','revenue','earnings','dividend','yield','eps','valuation','bull','bear','sector','etf','bond','treasury','inflation','gdp','fed','rate','ipo','crypto','bitcoin','portfolio','risk','hedge','option','futures','forex','gold','oil','debt','equity','roi','profit','margin','growth','vol','beta','alpha','aapl','msft','nvda','tsla','amzn','googl','meta','nasdaq','dow','index','fund','forecast','target','analyst','buy','sell','hold'];
