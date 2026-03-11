@@ -1,0 +1,88 @@
+.app { display: flex; flex-direction: column; height: 100vh; font-family: 'SF Mono', Consolas, 'Courier New', monospace; background: #0a0e17; color: #e2e8f0; font-size: 12px; }
+.topbar { display: flex; align-items: center; justify-content: space-between; background: #111827; border-bottom: 1px solid #1e2d4a; padding: 0 12px; height: 36px; flex-shrink: 0; }
+.topbarLeft { display: flex; align-items: center; gap: 16px; }
+.logo { font-size: 15px; font-weight: 800; color: #f97316; letter-spacing: -0.5px; }
+.logoAccent { color: #e2e8f0; }
+.nav { display: flex; gap: 2px; }
+.navItem { color: #8899b4; text-decoration: none; padding: 6px 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; border-bottom: 2px solid transparent; transition: all .15s; }
+.navItem:hover { color: #e2e8f0; }
+.active { color: #f97316; border-bottom-color: #f97316; }
+.tickerTape { flex: 1; display: flex; gap: 18px; overflow: hidden; margin: 0 20px; white-space: nowrap; font-size: 11px; color: #8899b4; }
+.tick b { color: #e2e8f0; margin-right: 4px; }
+.tick em { font-style: normal; }
+.up { color: #22c55e; }
+.dn { color: #ef4444; }
+.topbarRight { display: flex; align-items: center; gap: 10px; font-size: 11px; }
+.marketOpen { padding: 2px 8px; border-radius: 3px; font-weight: 700; font-size: 10px; letter-spacing: 0.5px; background: rgba(34,197,94,.15); color: #22c55e; border: 1px solid rgba(34,197,94,.3); }
+.clock { color: #8899b4; font-variant-numeric: tabular-nums; }
+.btnPro { background: #f97316; color: #000; border: none; padding: 3px 10px; border-radius: 3px; font-size: 10px; font-weight: 800; cursor: pointer; letter-spacing: 0.5px; }
+.main { display: flex; flex: 1; overflow: hidden; }
+.sidebar { width: 220px; background: #111827; border-right: 1px solid #1e2d4a; display: flex; flex-direction: column; flex-shrink: 0; overflow-y: auto; }
+.searchBox { padding: 8px; }
+.searchInput { width: 100%; background: #0a0e17; border: 1px solid #1e2d4a; color: #e2e8f0; padding: 7px 10px; border-radius: 4px; font-size: 11px; font-family: inherit; outline: none; }
+.searchInput:focus { border-color: #f97316; }
+.panelHeader { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; font-size: 10px; font-weight: 700; color: #8899b4; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #1e2d4a; border-top: 1px solid #1e2d4a; background: rgba(255,255,255,.02); }
+.btnSm { background: none; border: 1px solid #1e2d4a; color: #f97316; padding: 2px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-family: inherit; font-weight: 600; }
+.wlTable { flex: 1; }
+.wlRow { display: flex; align-items: center; padding: 6px 12px; border-bottom: 1px solid rgba(30,45,74,.5); cursor: pointer; transition: background .1s; }
+.wlRow:hover { background: rgba(255,255,255,.03); }
+.wlActive { background: rgba(249,115,22,.08); border-left: 2px solid #f97316; }
+.wlSym { font-weight: 700; color: #e2e8f0; width: 52px; font-size: 11px; }
+.wlPrice { flex: 1; text-align: right; color: #e2e8f0; font-variant-numeric: tabular-nums; }
+.wlChg { width: 60px; text-align: right; font-size: 11px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.portValue { padding: 10px 12px; }
+.portLabel { font-size: 10px; color: #8899b4; letter-spacing: 0.5px; text-transform: uppercase; }
+.portAmount { font-size: 22px; font-weight: 700; color: #e2e8f0; margin: 2px 0; font-variant-numeric: tabular-nums; }
+.portChange { font-size: 11px; font-weight: 600; }
+.portStats { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #1e2d4a; }
+.portStat { padding: 6px 12px; border-bottom: 1px solid rgba(30,45,74,.4); }
+.portStat:nth-child(odd) { border-right: 1px solid rgba(30,45,74,.4); }
+.psLabel { display: block; font-size: 9px; color: #8899b4; letter-spacing: 0.5px; text-transform: uppercase; }
+.psVal { font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.content { flex: 1; display: flex; flex-direction: column; overflow-y: auto; padding: 12px; gap: 12px; }
+.stockHeader { display: flex; justify-content: space-between; align-items: flex-start; background: #111827; border: 1px solid #1e2d4a; border-radius: 4px; padding: 12px 16px; }
+.stockName { font-size: 18px; font-weight: 700; color: #e2e8f0; }
+.stockCo { font-size: 13px; font-weight: 400; color: #8899b4; }
+.priceRow { display: flex; align-items: baseline; gap: 10px; margin-top: 4px; }
+.bigPrice { font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.bigChange { font-size: 14px; font-weight: 600; }
+.timeframes { display: flex; gap: 2px; }
+.tf { background: #0a0e17; border: 1px solid #1e2d4a; color: #8899b4; padding: 4px 10px; font-size: 10px; font-family: inherit; cursor: pointer; font-weight: 600; transition: all .15s; }
+.tf:first-child { border-radius: 3px 0 0 3px; }
+.tf:last-child { border-radius: 0 3px 3px 0; }
+.tfActive { background: #f97316; color: #000; border-color: #f97316; }
+.tf:hover:not(.tfActive) { background: #1a2235; color: #e2e8f0; }
+.chartArea { background: #111827; border: 1px solid #1e2d4a; border-radius: 4px; padding: 12px; }
+.chartSvg { width: 100%; height: auto; display: block; }
+.chartLabels { display: flex; justify-content: space-between; padding-top: 6px; font-size: 10px; color: #8899b4; }
+.metricsGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.metricCard { background: #111827; border: 1px solid #1e2d4a; border-radius: 4px; padding: 10px 12px; transition: border-color .15s; }
+.metricCard:hover { border-color: #f97316; }
+.mcLabel { font-size: 9px; color: #8899b4; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
+.mcValue { font-size: 15px; font-weight: 700; color: #e2e8f0; font-variant-numeric: tabular-nums; }
+.newsSection { background: #111827; border: 1px solid #1e2d4a; border-radius: 4px; }
+.liveDot { color: #22c55e; font-size: 10px; font-weight: 700; position: relative; padding-left: 12px; }
+.liveDot::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+.newsItem { display: flex; gap: 10px; padding: 8px 12px; border-bottom: 1px solid rgba(30,45,74,.4); cursor: pointer; transition: background .1s; }
+.newsItem:hover { background: rgba(255,255,255,.02); }
+.newsTime { color: #f97316; font-size: 10px; font-weight: 700; min-width: 36px; padding-top: 2px; }
+.newsTitle { font-size: 12px; color: #e2e8f0; line-height: 1.4; }
+.newsSrc { font-size: 10px; color: #8899b4; margin-top: 2px; }
+.aiPanel { width: 280px; background: #111827; border-left: 1px solid #1e2d4a; display: flex; flex-direction: column; flex-shrink: 0; }
+.aiHeader { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; border-bottom: 1px solid #1e2d4a; }
+.aiTitle { font-size: 12px; font-weight: 700; color: #f97316; }
+.aiBadge { font-size: 9px; background: rgba(59,130,246,.15); color: #3b82f6; padding: 2px 6px; border-radius: 3px; border: 1px solid rgba(59,130,246,.3); font-weight: 700; letter-spacing: 0.3px; }
+.aiMessages { flex: 1; overflow-y: auto; padding: 8px; }
+.aiMsg { margin-bottom: 10px; padding: 8px 10px; border-radius: 6px; font-size: 11px; line-height: 1.5; }
+.aiBot { background: #1a2235; border: 1px solid #1e2d4a; }
+.aiUser { background: rgba(249,115,22,.08); border: 1px solid rgba(249,115,22,.2); margin-left: 20px; }
+.aiSender { font-size: 9px; font-weight: 700; color: #f97316; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
+.aiUser .aiSender { color: #3b82f6; }
+.aiText { color: #e2e8f0; font-size: 11px; line-height: 1.5; }
+.aiText b { color: #22c55e; }
+.aiInputRow { display: flex; padding: 8px; gap: 6px; border-top: 1px solid #1e2d4a; background: #0a0e17; }
+.aiInput { flex: 1; background: #1a2235; border: 1px solid #1e2d4a; color: #e2e8f0; padding: 8px 10px; border-radius: 4px; font-size: 11px; font-family: inherit; outline: none; }
+.aiInput:focus { border-color: #f97316; }
+.aiSend { background: #f97316; color: #000; border: none; padding: 8px 14px; border-radius: 4px; font-size: 11px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.aiSend:hover { opacity: .85; }
